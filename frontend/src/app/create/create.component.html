@@ -1,0 +1,35 @@
+<div class="container">
+    <div *ngIf="error" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{error}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <form [formGroup]= "empleadoForm" (ngSubmit)="empleadorSubmit()">
+        <div class="col-lg-5 mt-2">
+            <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        </div>
+        <div class="col-lg-5 mt-2">
+            <input type="text" class="form-control" formControlName="apellido" placeholder="Apellido">
+        </div>
+        <div class="col-lg-5 mt-2">
+            <input type="text" class="form-control" formControlName="documento" placeholder="Documento">
+        </div>
+        <div class="col-lg-5 mt-2">
+            <input type="text" class="form-control" formControlName="correo" placeholder="Correo">
+        </div>
+        <div class="col-lg-5 mt-2">
+            <input type="text" class="form-control" formControlName="rol" placeholder="Rol">
+        </div>
+        <div class="col-lg-5 mt-2">
+            <input type="number" class="form-control" formControlName="isboos" placeholder="Calificación de Jefe">
+        </div>
+        <br>
+        <div class="alert alert-warning col-lg-8" role="alert">
+            Si, el empleado es jefe su calificacion debe tener el valor 1, si no el valor 0.
+        </div>
+        <div class="col-lg-5 mt-2">
+            <button class="btn btn-success">Create</button>
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="contianer ">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = 'let us of retriveData'>
+            <th scope="row">{{us.id}}</th>
+            <td>{{us.nombre}}</td>
+            <td>{{us.apellido}}</td>
+            <td>{{us.documento}}</td>
+            <td>{{us.correo}}</td>
+            <td>{{us.rol}}</td>
+          </tr>
+      </table>
+</div>
