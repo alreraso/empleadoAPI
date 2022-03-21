@@ -28,20 +28,42 @@ Debera ver el siguiente log que le indica que puede hacer uso del enlace http://
 
     server running fine on port 3000
 
-    
+
 Asi finalizaria la ejecucion del backend
 
 
 Para el frontend se debe contar con una version de angular cli en lo posible la 13.3 utilizada en este proyecto
 de no contar con ella se puede usar el comando:
+
+
     npm install -g @angular/cli
+
+
 Una vez descargado puede ejecutar el comando:
+
+
     npm install o npm i
+
+
 Esto descargara dependencias para el proyecto en frontend
+
+
 Luego puede usar el comando:
+
+
     ng serve para ejecutar el proyecto
+
+
 Aparecera un mensaje que dice al final:
+
+
      Compiled successfully.
+
+
 Podra abrir el link:
+
+
     http://localhost:4200/
+
+    
 Donde encontrara el formulario de creacion y una tabla de read que inicialmente estara vacia, puede usar los comando previamente mencionados de database para poder tener una vista del proyecto en funcion de prueba de concepto.
